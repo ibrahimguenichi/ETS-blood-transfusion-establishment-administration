@@ -1,0 +1,7 @@
+123344 el_jazzar kairouan 40 kairouan 77234567 hopitaleljazzar@gmail.tn 2 1 0 0 0 0
+123345 fattouma_bourguiba monastir 20 monastir 77236567 hopitafattoumabourguiba@gmail.tn 2 1 0 0 0 0
+123346 hopital-militaire sousse 30 tunis 77234537 hopitaleljazzar@gmail.tn 0 0 0 0 0 0
+123347 Rabta sousse 30 tunis 77234537 hopitaleljazzar@gmail.tn 0 0 0 0 0 0
+123348 hopital-sfax sousse 30 tunis 77234537 hopitaleljazzar@gmail.tn 0 0 0 0 0 0
+123349 hopital-mestir sousse 30 tunis 77234537 hopitaleljazzar@gmail.tn 0 0 0 0 0 0
+
