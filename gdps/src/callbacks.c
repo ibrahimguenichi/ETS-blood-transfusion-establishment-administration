@@ -9,6 +9,7 @@
 #include "support.h"
 #include "fonctions.h"
 #include "etablissement.h"
+#include "utilisateur.h"
 
 int confirmation = 1;
 int confirmation_modif = 1;
@@ -893,6 +894,53 @@ afficher_demande_cher_n(treeview);
 }
 //sprintf(test, "%d", x);
 //gtk_label_set_text(GTK_LABEL(msg), test);
+
+}
+
+
+void
+on_auth_connecter_button_clicked       (GtkWidget       *objet,
+                                        gpointer         user_data)
+{
+GtkWidget *email;
+GtkWidget *mdp;
+GtkWidget *msg1;
+GtkWidget *msg2;
+GtkWidget *gestion;
+
+email = lookup_widget(objet, "auth_email_entry");
+mdp = lookup_widget(objet, "auth_mdp_entry");
+msg1 = lookup_widget(objet, "auth_msg1");
+msg2 = lookup_widget(objet, "auth_msg2");
+
+char e_mail[35];
+char mdpasse[15];
+Utilisateur u;
+
+strcpy (e_mail, gtk_entry_get_text(GTK_ENTRY(email)));
+strcpy (mdpasse, gtk_entry_get_text(GTK_ENTRY(mdp)));
+
+u = chercher_utlis ("utilisateur.txt", e_mail);
+
+if (strcmp(u.adresse_email, "-1") == 1)
+{
+	gtk_label_set_text(GTK_LABEL(msg1), "Utilisateur non trouve!!");
+}
+else
+{
+	if (strcmp(u.CIN, "-1") == 1)
+	{
+		gtk_label_set_text(GTK_LABEL(msg2), "Mot de passe incorrecte!!");
+	}
+	else if (strcmp(u.CIN, "-1") == 0)
+	{
+	if (strcmp(u.role, "responsable_ETS") == 0)
+	{
+	gestion = create_gestion ();
+	gtk_widget_show (gestion);
+	}
+	}
+}
 
 }
 

@@ -118,3 +118,7 @@ on_gdps_statistique_button_clicked     (GtkWidget       *objet,
 void
 on_gdps_chercher_button_clicked        (GtkWidget       *objet,
                                         gpointer         user_data);
+
+void
+on_auth_connecter_button_clicked       (GtkWidget       *objet,
+                                        gpointer         user_data);

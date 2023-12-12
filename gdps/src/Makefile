@@ -100,7 +100,7 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_gdps_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) interface.$(OBJEXT) \
-	callbacks.$(OBJEXT) fonctions.$(OBJEXT)
+	callbacks.$(OBJEXT) fonctions.$(OBJEXT) utilisateur.$(OBJEXT)
 gdps_OBJECTS = $(am_gdps_OBJECTS)
 am__DEPENDENCIES_1 =
 gdps_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -160,12 +160,12 @@ ETAGS = etags
 CTAGS = ctags
 am__DIST_COMMON = $(srcdir)/Makefile.in $(top_srcdir)/depcomp
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /home/vboxuser/Projects/gdps/missing aclocal-1.15
+ACLOCAL = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/missing aclocal-1.15
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 1
-AUTOCONF = ${SHELL} /home/vboxuser/Projects/gdps/missing autoconf
-AUTOHEADER = ${SHELL} /home/vboxuser/Projects/gdps/missing autoheader
-AUTOMAKE = ${SHELL} /home/vboxuser/Projects/gdps/missing automake-1.15
+AUTOCONF = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/missing autoconf
+AUTOHEADER = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/missing autoheader
+AUTOMAKE = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/missing automake-1.15
 AWK = mawk
 CATALOGS = 
 CATOBJEXT = .gmo
@@ -200,7 +200,7 @@ LIBOBJS =
 LIBS = 
 LTLIBOBJS = 
 MAINT = 
-MAKEINFO = ${SHELL} /home/vboxuser/Projects/gdps/missing makeinfo
+MAKEINFO = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/missing makeinfo
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = ./mkinstalldirs
 MSGFMT = /usr/bin/msgfmt
@@ -229,10 +229,10 @@ STRIP =
 USE_NLS = yes
 VERSION = 0.1
 XGETTEXT = /usr/bin/xgettext
-abs_builddir = /home/vboxuser/Projects/gdps/src
-abs_srcdir = /home/vboxuser/Projects/gdps/src
-abs_top_builddir = /home/vboxuser/Projects/gdps
-abs_top_srcdir = /home/vboxuser/Projects/gdps
+abs_builddir = /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/src
+abs_srcdir = /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/src
+abs_top_builddir = /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps
+abs_top_srcdir = /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps
 ac_ct_CC = gcc
 am__include = include
 am__leading_dot = .
@@ -251,7 +251,7 @@ host_alias =
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /home/vboxuser/Projects/gdps/install-sh
+install_sh = ${SHELL} /home/vboxuser/Desktop/gdps-git/ETS-blood-transfusion-establishment-administration/gdps/install-sh
 libdir = ${exec_prefix}/lib
 libexecdir = ${exec_prefix}/libexec
 localedir = ${datarootdir}/locale
@@ -282,7 +282,8 @@ gdps_SOURCES = \
 	support.c support.h \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
-	fonctions.c fonctions.h
+	fonctions.c fonctions.h \
+	utilisateur.c utilisateur.h
 
 gdps_LDADD = -lgtk-x11-2.0 -lgdk-x11-2.0 -lpangocairo-1.0 -latk-1.0 -lcairo -lgdk_pixbuf-2.0 -lgio-2.0 -lpangoft2-1.0 -lpango-1.0 -lgobject-2.0 -lglib-2.0 -lfontconfig -lfreetype $(INTLLIBS)
 all: all-am
@@ -376,6 +377,7 @@ include ./$(DEPDIR)/fonctions.Po
 include ./$(DEPDIR)/interface.Po
 include ./$(DEPDIR)/main.Po
 include ./$(DEPDIR)/support.Po
+include ./$(DEPDIR)/utilisateur.Po
 
 .c.o:
 	$(AM_V_CC)$(COMPILE) -MT $@ -MD -MP -MF $(DEPDIR)/$*.Tpo -c -o $@ $<

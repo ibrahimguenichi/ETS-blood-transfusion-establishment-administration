@@ -12,7 +12,8 @@ gdps_SOURCES = \
 	support.c support.h \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
-	fonctions.c fonctions.h
+	fonctions.c fonctions.h \
+	utilisateur.c utilisateur.h
 
 gdps_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 

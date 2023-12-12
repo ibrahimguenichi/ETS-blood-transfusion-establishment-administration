@@ -5,3 +5,4 @@
 GtkWidget* create_gestion (void);
 GtkWidget* create_fenetre_ajouter (void);
 GtkWidget* create_fenetre_modifier (void);
+GtkWidget* create_authentification (void);

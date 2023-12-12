@@ -17,6 +17,7 @@ int
 main (int argc, char *argv[])
 {
   GtkWidget *gestion;
+  GtkWidget *authentification;
   GtkWidget *combobox1;
   chaine* tab;
   int l;
@@ -39,7 +40,9 @@ main (int argc, char *argv[])
    * (except popup menus), just so that you see something after building
    * the project. Delete any components that you don't want shown initially.
    */
-  gestion = create_gestion ();
+  //gestion = create_gestion ();
+  authentification = create_authentification ();
+/*
   combobox1 = lookup_widget(gestion, "gdps_choixeatb");
 
   etab_comb (&l, &tab);
@@ -49,6 +52,8 @@ main (int argc, char *argv[])
   }
 
   gtk_widget_show (gestion);
+*/
+  gtk_widget_show (authentification);
 
   gtk_main ();
   return 0;

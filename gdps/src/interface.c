@@ -957,3 +957,89 @@ create_fenetre_modifier (void)
   return fenetre_modifier;
 }
 
+GtkWidget*
+create_authentification (void)
+{
+  GtkWidget *authentification;
+  GtkWidget *fixed4;
+  GtkWidget *auth_email_entry;
+  GtkWidget *auth_mdp_entry;
+  GtkWidget *image1;
+  GtkWidget *auth_email_label;
+  GtkWidget *auth_msg1;
+  GtkWidget *auth_mdp_label;
+  GtkWidget *auth_msg2;
+  GtkWidget *auth_connecter_button;
+
+  authentification = gtk_window_new (GTK_WINDOW_TOPLEVEL);
+  gtk_window_set_title (GTK_WINDOW (authentification), _("authetification"));
+
+  fixed4 = gtk_fixed_new ();
+  gtk_widget_show (fixed4);
+  gtk_container_add (GTK_CONTAINER (authentification), fixed4);
+
+  auth_email_entry = gtk_entry_new ();
+  gtk_widget_show (auth_email_entry);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_email_entry, 128, 88);
+  gtk_widget_set_size_request (auth_email_entry, 224, 32);
+  gtk_entry_set_invisible_char (GTK_ENTRY (auth_email_entry), 8226);
+
+  auth_mdp_entry = gtk_entry_new ();
+  gtk_widget_show (auth_mdp_entry);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_mdp_entry, 128, 176);
+  gtk_widget_set_size_request (auth_mdp_entry, 224, 32);
+  gtk_entry_set_visibility (GTK_ENTRY (auth_mdp_entry), FALSE);
+  gtk_entry_set_invisible_char (GTK_ENTRY (auth_mdp_entry), 8226);
+
+  image1 = create_pixmap (authentification, "VitalFlow.png");
+  gtk_widget_show (image1);
+  gtk_fixed_put (GTK_FIXED (fixed4), image1, 0, 0);
+  gtk_widget_set_size_request (image1, 720, 432);
+
+  auth_email_label = gtk_label_new (_("Saisir votre email:"));
+  gtk_widget_show (auth_email_label);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_email_label, 128, 64);
+  gtk_widget_set_size_request (auth_email_label, 128, 24);
+  gtk_misc_set_padding (GTK_MISC (auth_email_label), 3, 0);
+
+  auth_msg1 = gtk_label_new ("");
+  gtk_widget_show (auth_msg1);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_msg1, 128, 120);
+  gtk_widget_set_size_request (auth_msg1, 232, 24);
+  gtk_misc_set_alignment (GTK_MISC (auth_msg1), 1.11759e-08, 0.5);
+
+  auth_mdp_label = gtk_label_new (_("Saisir votre mot de passe:"));
+  gtk_widget_show (auth_mdp_label);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_mdp_label, 128, 152);
+  gtk_widget_set_size_request (auth_mdp_label, 184, 24);
+
+  auth_msg2 = gtk_label_new ("");
+  gtk_widget_show (auth_msg2);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_msg2, 128, 208);
+  gtk_widget_set_size_request (auth_msg2, 240, 24);
+  gtk_misc_set_alignment (GTK_MISC (auth_msg2), 0, 0.5);
+
+  auth_connecter_button = gtk_button_new_with_mnemonic (_("Connecter"));
+  gtk_widget_show (auth_connecter_button);
+  gtk_fixed_put (GTK_FIXED (fixed4), auth_connecter_button, 184, 240);
+  gtk_widget_set_size_request (auth_connecter_button, 168, 32);
+
+  g_signal_connect ((gpointer) auth_connecter_button, "clicked",
+                    G_CALLBACK (on_auth_connecter_button_clicked),
+                    NULL);
+
+  /* Store pointers to all widgets, for use by lookup_widget(). */
+  GLADE_HOOKUP_OBJECT_NO_REF (authentification, authentification, "authentification");
+  GLADE_HOOKUP_OBJECT (authentification, fixed4, "fixed4");
+  GLADE_HOOKUP_OBJECT (authentification, auth_email_entry, "auth_email_entry");
+  GLADE_HOOKUP_OBJECT (authentification, auth_mdp_entry, "auth_mdp_entry");
+  GLADE_HOOKUP_OBJECT (authentification, image1, "image1");
+  GLADE_HOOKUP_OBJECT (authentification, auth_email_label, "auth_email_label");
+  GLADE_HOOKUP_OBJECT (authentification, auth_msg1, "auth_msg1");
+  GLADE_HOOKUP_OBJECT (authentification, auth_mdp_label, "auth_mdp_label");
+  GLADE_HOOKUP_OBJECT (authentification, auth_msg2, "auth_msg2");
+  GLADE_HOOKUP_OBJECT (authentification, auth_connecter_button, "auth_connecter_button");
+
+  return authentification;
+}
+
