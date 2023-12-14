@@ -1,4 +1,4 @@
-utilisateur.o: utilisateur.c /usr/include/stdc-predef.h utilisateur.h \
+utilisateur.o: utilisateur.c /usr/include/stdc-predef.h ../config.h \
  /usr/include/stdio.h \
  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
  /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
@@ -53,7 +53,7 @@ utilisateur.o: utilisateur.c /usr/include/stdc-predef.h utilisateur.h \
  /usr/include/alloca.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-bsearch.h \
  /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
- /usr/include/x86_64-linux-gnu/bits/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/stdlib.h utilisateur.h \
  /usr/include/gtk-2.0/gtk/gtk.h /usr/include/gtk-2.0/gdk/gdk.h \
  /usr/include/gtk-2.0/gdk/gdkapplaunchcontext.h \
  /usr/include/glib-2.0/gio/gio.h /usr/include/glib-2.0/gio/giotypes.h \
@@ -607,7 +607,7 @@ utilisateur.o: utilisateur.c /usr/include/stdc-predef.h utilisateur.h \
 
 /usr/include/stdc-predef.h:
 
-utilisateur.h:
+../config.h:
 
 /usr/include/stdio.h:
 
@@ -726,6 +726,8 @@ utilisateur.h:
 /usr/include/x86_64-linux-gnu/bits/stdlib-float.h:
 
 /usr/include/x86_64-linux-gnu/bits/stdlib.h:
+
+utilisateur.h:
 
 /usr/include/gtk-2.0/gtk/gtk.h:
 

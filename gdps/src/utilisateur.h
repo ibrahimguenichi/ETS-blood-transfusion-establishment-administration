@@ -16,7 +16,7 @@ typedef struct Utilisateur {
     char prenom[20];
     char CIN [20] ;
     char role[50];
-    char adresse_email[50];
+    char adresse_email[70];
     char telephone [20];
     char region[20];
     char sexe[20];
@@ -47,8 +47,9 @@ typedef struct Utilisateur {
 int  ajouter_utilisateur(Utilisateur U);
 int supprimer_u(Utilisateur U);
 void rechercher_utilisateur(const char *search_term, GtkWidget *treeview);
-void UserRole(char *filename, char role [20]);
-void pourcentageUSer(char *filename ,int *nbHomme, int *nbFemme,int *totalUsers);
+void rechercher_par_role(const char *search_role, GtkWidget *treeview);
+void calculate_female_percentage(int *totalUsers, float *femalePercentage);
+void calculate_male_percentage(int *totalUsers, float *malePercentage);
 void afficher_utilisateur(GtkWidget *liste);
 Utilisateur chercher_utlis (char* File_name, char* email);
 

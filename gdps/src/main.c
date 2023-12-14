@@ -42,17 +42,7 @@ main (int argc, char *argv[])
    */
   //gestion = create_gestion ();
   authentification = create_authentification ();
-/*
-  combobox1 = lookup_widget(gestion, "gdps_choixeatb");
 
-  etab_comb (&l, &tab);
-  for (int i = 0; i < l; i++)
-  {
-  gtk_combo_box_append_text (GTK_COMBO_BOX (combobox1), _(tab[i].a));
-  }
-
-  gtk_widget_show (gestion);
-*/
   gtk_widget_show (authentification);
 
   gtk_main ();

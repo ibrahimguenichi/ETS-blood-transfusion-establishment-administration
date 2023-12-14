@@ -100,7 +100,8 @@ CONFIG_CLEAN_VPATH_FILES =
 am__installdirs = "$(DESTDIR)$(bindir)"
 PROGRAMS = $(bin_PROGRAMS)
 am_gdps_OBJECTS = main.$(OBJEXT) support.$(OBJEXT) interface.$(OBJEXT) \
-	callbacks.$(OBJEXT) fonctions.$(OBJEXT) utilisateur.$(OBJEXT)
+	callbacks.$(OBJEXT) fonctions.$(OBJEXT) utilisateur.$(OBJEXT) \
+	fiche.$(OBJEXT)
 gdps_OBJECTS = $(am_gdps_OBJECTS)
 am__DEPENDENCIES_1 =
 gdps_DEPENDENCIES = $(am__DEPENDENCIES_1)
@@ -283,7 +284,8 @@ gdps_SOURCES = \
 	interface.c interface.h \
 	callbacks.c callbacks.h \
 	fonctions.c fonctions.h \
-	utilisateur.c utilisateur.h
+	utilisateur.c utilisateur.h \
+	fiche.c fiche.h
 
 gdps_LDADD = @PACKAGE_LIBS@ $(INTLLIBS)
 all: all-am
@@ -373,6 +375,7 @@ distclean-compile:
 	-rm -f *.tab.c
 
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/callbacks.Po@am__quote@
+@AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fiche.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/fonctions.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/interface.Po@am__quote@
 @AMDEP_TRUE@@am__include@ @am__quote@./$(DEPDIR)/main.Po@am__quote@
