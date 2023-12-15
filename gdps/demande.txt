@@ -1,4 +1,8 @@
 4 123346 A+ 0 O+ 0 b+ 7 AB+ 2 A- 1 O- 4 B- 0 AB- 3 Traumatisme,Interventions-cardiaque. 7 Decembre 2023 10 Mars 2023 0
-5 123347 A+ 5 O+ 2 b+ 1 AB+ 0 A- 0 O- 0 B- 0 AB- 0 Cansers,Interventions-cardiaque,Hemorragie-interne,Complication-pendant-la-grossesse. 7 Decembre 2023 5 Mai 2023 0
 6 123346 A+ 2 O+ 2 b+ 0 AB+ 0 A- 0 O- 0 B- 0 AB- 0 Pas-de-choix. 7 Decembre 2023 4 Fevrier 2024 0
-7 123349 A+ 5 O+ 5 b+ 0 AB+ 3 A- 2 O- 1 B- 0 AB- 0 Maladies-du-sang,Cansers,Hemorragie-interne. 7 Decembre 2023 10 Mai 2024 0
+7 123344 A+ 5 O+ 7 b+ 1 AB+ 0 A- 2 O- 0 B- 0 AB- 0 Maladies-du-sang,Cansers,Hemorragie-interne,Complication-pendant-la-grossesse. 7 Decembre 2023 10 Juilliet 2024 0
+8 123347 A+ 4 O+ 2 b+ 0 AB+ 0 A- 0 O- 0 B- 0 AB- 0 Chirurgie,Traumatisme,Maladies-du-sang,Cansers. 7 Decembre 2023 2 Mai 2024 0
+9 123349 A+ 2 O+ 0 b+ 0 AB+ 5 A- 0 O- 0 B- 3 AB- 0 Interventions-cardiaque,Hemorragie-interne. 7 Decembre 2023 11 Aout 2024 0
+10 123345 A+ 0 O+ 0 b+ 0 AB+ 2 A- 6 O- 0 B- 0 AB- 6 Chirurgie,Traumatisme. 7 Decembre 2023 5 Avril 2024 0
+11 123348 A+ 3 O+ 1 b+ 1 AB+ 0 A- 0 O- 0 B- 0 AB- 0 Chirurgie,Traumatisme,Anemie-Severe,Maladies-du-sang. 7 Decembre 2023 6 Septembre 2024 0
+12 123347 A+ 0 O+ 1 b+ 0 AB+ 4 A- 0 O- 1 B- 0 AB- 0 Maladies-du-sang. 7 Decembre 2023 2 Avril 2023 0

@@ -1015,7 +1015,7 @@ create_authentification (void)
   gtk_entry_set_visibility (GTK_ENTRY (auth_mdp_entry), FALSE);
   gtk_entry_set_invisible_char (GTK_ENTRY (auth_mdp_entry), 8226);
 
-  image1 = create_pixmap (authentification, "VitalFlow.png");
+  image1 = create_pixmap (authentification, "Hayet.png");
   gtk_widget_show (image1);
   gtk_fixed_put (GTK_FIXED (fixed4), image1, 0, 0);
   gtk_widget_set_size_request (image1, 720, 432);

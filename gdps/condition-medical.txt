@@ -1,6 +1,13 @@
 2 Chirurgie 0 Traumatisme 1 Anemie-Severe 1 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 1 Complication-pendant-la-grossesse 1 
 3 Chirurgie 1 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 1 Complication-pendant-la-grossesse 1 
 4 Chirurgie 0 Traumatisme 1 Anemie-Severe 0 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 1 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
-5 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 0 Cansers 1 Interventions-cardiaque 1 Hemorragie-interne 1 Complication-pendant-la-grossesse 1 
+5 Chirurgie 0 Traumatisme 0 Anemie-Severe 1 Maladies-du-sang 1 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 1 
 6 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
-7 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 1 Cansers 1 Interventions-cardiaque 0 Hemorragie-interne 1 Complication-pendant-la-grossesse 0 
+7 Chirurgie 1 Traumatisme 1 Anemie-Severe 1 Maladies-du-sang 1 Cansers 1 Interventions-cardiaque 1 Hemorragie-interne 1 Complication-pendant-la-grossesse 1 
+8 Chirurgie 1 Traumatisme 1 Anemie-Severe 1 Maladies-du-sang 1 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
+7 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 1 Cansers 1 Interventions-cardiaque 0 Hemorragie-interne 1 Complication-pendant-la-grossesse 1 
+8 Chirurgie 1 Traumatisme 1 Anemie-Severe 0 Maladies-du-sang 1 Cansers 1 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
+9 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 1 Hemorragie-interne 1 Complication-pendant-la-grossesse 0 
+10 Chirurgie 1 Traumatisme 1 Anemie-Severe 0 Maladies-du-sang 0 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
+11 Chirurgie 1 Traumatisme 1 Anemie-Severe 1 Maladies-du-sang 1 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
+12 Chirurgie 0 Traumatisme 0 Anemie-Severe 0 Maladies-du-sang 1 Cansers 0 Interventions-cardiaque 0 Hemorragie-interne 0 Complication-pendant-la-grossesse 0 
